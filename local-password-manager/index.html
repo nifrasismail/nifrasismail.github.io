@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy · Local Password Manager</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --fg: #1a1a1a;
+        --muted: #444;
+        --bg: #fafafa;
+        --card: #fff;
+        --border: #e0e0e0;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --fg: #e8eaed;
+          --muted: #bdc1c6;
+          --bg: #202124;
+          --card: #292a2d;
+          --border: #3c4043;
+        }
+      }
+      body {
+        margin: 0;
+        font-family:
+          system-ui,
+          -apple-system,
+          Segoe UI,
+          Roboto,
+          Helvetica,
+          Arial,
+          sans-serif;
+        line-height: 1.55;
+        color: var(--fg);
+        background: var(--bg);
+      }
+      main {
+        max-width: 42rem;
+        margin: 0 auto;
+        padding: 2rem 1.25rem 3rem;
+      }
+      header {
+        margin-bottom: 1.75rem;
+      }
+      h1 {
+        font-size: 1.65rem;
+        margin: 0 0 0.35rem;
+        font-weight: 650;
+      }
+      .meta {
+        margin: 0;
+        font-size: 0.9rem;
+        color: var(--muted);
+      }
+      section {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 1.15rem 1.25rem;
+        margin-bottom: 1rem;
+      }
+      h2 {
+        font-size: 1.05rem;
+        margin: 0 0 0.5rem;
+        font-weight: 600;
+      }
+      p,
+      ul {
+        margin: 0.4rem 0 0;
+        font-size: 0.95rem;
+      }
+      ul {
+        padding-left: 1.2rem;
+      }
+      li {
+        margin: 0.25rem 0;
+      }
+      a {
+        color: inherit;
+        text-decoration-thickness: 0.08em;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      footer {
+        margin-top: 1.5rem;
+        font-size: 0.9rem;
+        color: var(--muted);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Privacy policy</h1>
+        <p class="meta">Local Password Manager · browser extension</p>
+        <p class="meta">Last updated: <time datetime="2026-05-06">6 May 2026</time></p>
+      </header>
+
+      <section aria-labelledby="overview-heading">
+        <h2 id="overview-heading">Overview</h2>
+        <p>
+          Local Password Manager (“the extension”) stores your saved logins on your
+          device inside Chrome. This policy describes what happens to data when you
+          use the extension. This extension is distributed independently and does
+          not require an account with the developer.
+        </p>
+      </section>
+
+      <section aria-labelledby="collection-heading">
+        <h2 id="collection-heading">Data the developer collects</h2>
+        <p>
+          The developer does not operate a backend service for this extension and
+          does not receive your saved passwords, master password, or vault contents.
+          The extension does not send your vault to developer-controlled servers for
+          storage or syncing as part of its core functionality.
+        </p>
+      </section>
+
+      <section aria-labelledby="local-heading">
+        <h2 id="local-heading">Data stored locally</h2>
+        <p>The extension may store the following in your browser profile:</p>
+        <ul>
+          <li>
+            An encrypted vault containing saved login records (for example site,
+            username, and password fields you choose to save).
+          </li>
+          <li>
+            Cryptographic material needed to decrypt the vault (for example salt and
+            ciphertext). Vault decryption requires your master password.
+          </li>
+        </ul>
+        <p>
+          This data remains on your device under your Chrome profile unless you copy,
+          sync, or export it using tools outside this extension.
+        </p>
+      </section>
+
+      <section aria-labelledby="permissions-heading">
+        <h2 id="permissions-heading">Why the extension requests permissions</h2>
+        <ul>
+          <li>
+            <strong>Storage:</strong> persist the encrypted vault locally in your
+            browser.
+          </li>
+          <li>
+            <strong>Active tab &amp; scripting:</strong> interact with the webpage you
+            are using when you choose actions such as filling saved credentials.
+          </li>
+          <li>
+            <strong>Website access (HTTP/HTTPS):</strong> run bundled scripts on pages
+            you visit so the extension can locate common login fields for autofill or
+            capture flows while your vault is unlocked, subject to the extension’s
+            design.
+          </li>
+        </ul>
+        <p>
+          The extension’s packaged JavaScript runs locally. It is not used to load or
+          execute remote code from third-party websites for the extension’s own logic.
+        </p>
+      </section>
+
+      <section aria-labelledby="third-heading">
+        <h2 id="third-heading">Third-party services</h2>
+        <p>
+          The extension is not designed to send your saved credentials to
+          third-party analytics or advertising services as part of normal operation. If
+          you use browser features (such as profile sync) that are provided by your
+          browser vendor, that is governed by your browser’s settings and policies, not
+          this document.
+        </p>
+      </section>
+
+      <section aria-labelledby="uninstall-heading">
+        <h2 id="uninstall-heading">Uninstalling</h2>
+        <p>
+          If you remove the extension, data stored by the extension in your browser
+          storage may be deleted or left behind depending on Chrome’s behavior and your
+          settings. If you need guaranteed deletion, follow Chrome’s documentation for
+          removing extension data.
+        </p>
+      </section>
+
+      <section aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact</h2>
+        <p>
+          Questions about this policy or the extension may be raised via the GitHub
+          repository’s issue tracker:
+          <a
+            href="https://github.com/nifrasismail/local-password-manager/issues"
+            rel="noopener noreferrer"
+            >github.com/nifrasismail/local-password-manager/issues</a
+          >.
+        </p>
+      </section>
+
+      <footer>
+        <p>
+          This page is published for Chrome Web Store disclosures and user reference.
+          Hosted on this GitHub Pages user site.
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
