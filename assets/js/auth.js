@@ -1,5 +1,5 @@
 (function () {
-  const HASH = "ca13291769abbe7d6492dcaf567b02a954833e438b2d531bf0b3235ad2e55598";
+  const HASH = "44267c87c6642490bd97fd42ba40bb280d50384adaccf81b238e17ed4e7a7503";
   const KEY  = "ni_auth";
 
   async function sha256(str) {
