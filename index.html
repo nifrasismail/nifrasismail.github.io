@@ -20,6 +20,19 @@
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
+  <!-- AUTH GATE -->
+  <div class="auth-gate" id="authGate" style="display:none">
+    <div class="auth-gate__box">
+      <div class="auth-gate__brand">NI<span>.</span></div>
+      <p class="auth-gate__kicker">// ACCESS RESTRICTED</p>
+      <h2 class="auth-gate__title">Enter password to continue</h2>
+      <form class="auth-gate__form" id="authForm" autocomplete="off">
+        <input class="auth-gate__input" id="authInput" type="password" placeholder="Password" autofocus />
+        <button class="auth-gate__btn" type="submit">Unlock</button>
+      </form>
+      <p class="auth-gate__err" id="authErr"></p>
+    </div>
+  </div>
   <!-- progress rail -->
   <div class="scroll-progress"><span id="progressBar"></span></div>
 
@@ -148,6 +161,8 @@
     <span>Designed &amp; built as a blueprint — Sri Lanka · UAE</span>
   </footer>
 
+  <!-- auth -->
+  <script src="assets/js/auth.js"></script>
   <!-- libs -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
