@@ -34,34 +34,15 @@ window.PORTFOLIO = {
   // Each era is a "structure" raised over the timeline.
   timeline: [
     {
-      year: "2016",
-      span: "May – Oct 2016",
-      role: "Associate Software Engineer",
-      company: "WSO2 Inc",
-      place: "Sri Lanka",
-      blueprint: "Foundations",
-      desc: "Laid the first stones — built middleware connectors for the WSO2 ESB ecosystem, including the StubHub Connector and RSA SecurID Authenticator, enabling secure third-party integrations.",
-      tags: ["Java", "ESB", "Open Source", "Integrations"]
-    },
-    {
-      year: "2016",
-      span: "Oct 2016 – Oct 2017",
-      role: "Software Engineer",
-      company: "TechOrin (Pvt) Ltd",
-      place: "Sri Lanka",
-      blueprint: "Framing",
-      desc: "Built backend services and dashboards with Java Spring Boot & Angular. Partnered directly with clients on requirements and system architecture, delivering scalable solutions on deadline and mentoring juniors.",
-      tags: ["Spring Boot", "Angular", "Architecture"]
-    },
-    {
-      year: "2017",
-      span: "Dec 2017 – Dec 2020",
-      role: "Senior Software Engineer & Team Lead",
-      company: "Sprii.com",
+      year: "2021",
+      span: "Dec 2021 – Present",
+      role: "Lead Software Engineer — Full Stack & AI Platform",
+      company: "Ounass",
       place: "UAE",
-      blueprint: "Going Serverless",
-      desc: "Led the transition to serverless architecture on Google Cloud (Cloud Functions, Pub/Sub) for a regional e-commerce platform. Spearheaded the Sprii Community App (Flutter + Node.js + Firebase) supporting 10k+ concurrent users across MENA.",
-      tags: ["GCP", "Serverless", "Flutter", "Pub/Sub"]
+      blueprint: "The AI Era",
+      desc: "Architecting and delivering production-grade agentic AI systems on GKE & Docker while leading a full-stack team. Scaled microservices to 100M+ monthly requests at 50k+ RPM, cut API latency from 300ms to 27ms, and established Responsible AI guardrails and an LLM-as-a-Judge evaluation framework.",
+      tags: ["Agentic AI", "GKE", "LangGraph", "Node.js", "Responsible AI"],
+      current: true
     },
     {
       year: "2020",
@@ -74,15 +55,34 @@ window.PORTFOLIO = {
       tags: ["Golang", "Microservices", "RabbitMQ", "Telco"]
     },
     {
-      year: "2021",
-      span: "Dec 2021 – Present",
-      role: "Lead Software Engineer — Full Stack & AI Platform",
-      company: "Ounass",
+      year: "2017",
+      span: "Dec 2017 – Dec 2020",
+      role: "Senior Software Engineer & Team Lead",
+      company: "Sprii.com",
       place: "UAE",
-      blueprint: "The AI Era",
-      desc: "Architecting and delivering production-grade agentic AI systems on GKE & Docker while leading a full-stack team. Scaled microservices to 100M+ monthly requests at 50k+ RPM, cut API latency from 300ms to 27ms, and established Responsible AI guardrails and an LLM-as-a-Judge evaluation framework.",
-      tags: ["Agentic AI", "GKE", "LangGraph", "Node.js", "Responsible AI"],
-      current: true
+      blueprint: "Going Serverless",
+      desc: "Led the transition to serverless architecture on Google Cloud (Cloud Functions, Pub/Sub) for a regional e-commerce platform. Spearheaded the Sprii Community App (Flutter + Node.js + Firebase) supporting 10k+ concurrent users across MENA.",
+      tags: ["GCP", "Serverless", "Flutter", "Pub/Sub"]
+    },
+    {
+      year: "2016",
+      span: "Oct 2016 – Oct 2017",
+      role: "Software Engineer",
+      company: "TechOrin (Pvt) Ltd",
+      place: "Sri Lanka",
+      blueprint: "Framing",
+      desc: "Built backend services and dashboards with Java Spring Boot & Angular. Partnered directly with clients on requirements and system architecture, delivering scalable solutions on deadline and mentoring juniors.",
+      tags: ["Spring Boot", "Angular", "Architecture"]
+    },
+    {
+      year: "2016",
+      span: "May – Oct 2016",
+      role: "Associate Software Engineer",
+      company: "WSO2 Inc",
+      place: "Sri Lanka",
+      blueprint: "Foundations",
+      desc: "Laid the first stones — built middleware connectors for the WSO2 ESB ecosystem, including the StubHub Connector and RSA SecurID Authenticator, enabling secure third-party integrations.",
+      tags: ["Java", "ESB", "Open Source", "Integrations"]
     }
   ],
 
@@ -170,53 +170,4 @@ window.PORTFOLIO = {
     detail: "Second Class Upper · GPA 3.64 / 4.0 · Research: consumer buying-pattern analysis (IEEE ICETECH 2016)"
   },
 
-  // ── GITHUB ARCHIVE — every public repo ───────────────────
-  // featured:true surfaces them first; lang drives the filter.
-  repos: [
-    { name: "Flutter-Saloon-Booking-App", lang: "Flutter", stars: 8, desc: "Open-source Saloon Booking App built with love on Flutter.", featured: true },
-    { name: "ai-pdf-pinecone-nextjs", lang: "TypeScript", stars: 0, desc: "Chat-with-PDF: RAG over documents using Pinecone + Next.js.", featured: true },
-    { name: "product-image-ai", lang: "AI", stars: 0, desc: "AI-powered product image generation tooling.", featured: true },
-    { name: "nextjs-13-with-strapi", lang: "JavaScript", stars: 1, desc: "Job-listing app: Strapi headless CMS with Next.js 13.", featured: true },
-    { name: "react-food-web", lang: "JavaScript", stars: 0, desc: "React food-ordering web experience.", featured: true },
-    { name: "nerdcody-site", lang: "SCSS", stars: 0, desc: "Companion site for the Cody agent project.", featured: true },
-    { name: "flutter-firebase-bloc-pattern", lang: "Dart", stars: 0, desc: "Flutter + Firebase using the BLoC state pattern." },
-    { name: "blockPatternEmployeeApp", lang: "Dart", stars: 0, desc: "Employee app demonstrating the BLoC pattern in Flutter." },
-    { name: "simple-block-pattern-counter", lang: "Dart", stars: 0, desc: "Minimal BLoC counter reference." },
-    { name: "flutter-word-bank", lang: "Dart", stars: 0, desc: "Vocabulary word-bank app in Flutter." },
-    { name: "flutter-game", lang: "C++", stars: 0, desc: "Game experiment built with Flutter." },
-    { name: "laravel-queue-email", lang: "PHP", stars: 1, desc: "Queued email dispatch in Laravel." },
-    { name: "geo-address", lang: "PHP", stars: 1, desc: "Geo Address importer for Lumen." },
-    { name: "lumen-queue-rabitmq-integration", lang: "PHP", stars: 0, desc: "RabbitMQ queue integration for Lumen." },
-    { name: "lumen-custom-logger", lang: "PHP", stars: 0, desc: "Custom logging channel for Lumen." },
-    { name: "laravel-docker", lang: "PHP", stars: 0, desc: "Dockerized Laravel setup." },
-    { name: "laravel-events-listners", lang: "PHP", stars: 0, desc: "Events & listeners patterns in Laravel." },
-    { name: "ReadFile", lang: "PHP", stars: 1, desc: "File reading utilities." },
-    { name: "lumen", lang: "PHP", stars: 0, desc: "Lumen micro-framework experiments." },
-    { name: "Design-Patterns-Implementation", lang: "Java", stars: 0, desc: "Catalogue of software design patterns in Java." },
-    { name: "facade", lang: "Java", stars: 0, desc: "Implementation of the Facade design pattern." },
-    { name: "Data-Structure", lang: "Java", stars: 0, desc: "Core data-structure implementations." },
-    { name: "Sorting-Algorithm-Java-Implementation", lang: "Java", stars: 0, desc: "Sorting algorithms in Java." },
-    { name: "java-dsa", lang: "Java", stars: 0, desc: "Data structures & algorithms practice." },
-    { name: "BarCodeScannerAndoidZxing", lang: "Java", stars: 1, desc: "Android barcode scanner using ZXing." },
-    { name: "feedback", lang: "Java", stars: 1, desc: "Android feedback module." },
-    { name: "AndroidComponentImplementation", lang: "Java", stars: 0, desc: "Training material for Android components." },
-    { name: "ExpandableListView", lang: "Java", stars: 0, desc: "Android ExpandableListView reference." },
-    { name: "SimpleRecyclerView-Android", lang: "Java", stars: 0, desc: "Android RecyclerView reference." },
-    { name: "Simple-Spinner-Implementation---Android", lang: "Java", stars: 0, desc: "Android Spinner reference." },
-    { name: "docker-react-web-app", lang: "JavaScript", stars: 0, desc: "Dockerized React web app." },
-    { name: "HTML5-Validations", lang: "JavaScript", stars: 0, desc: "Native HTML5 form validation patterns." },
-    { name: "official-site", lang: "JavaScript", stars: 0, desc: "Personal official site build." },
-    { name: "api-guide-for-cmw", lang: "JavaScript", stars: 0, desc: "API guide documentation." },
-    { name: "angualr2", lang: "TypeScript", stars: 0, desc: "Angular 2 experiments." },
-    { name: "AngularJS", lang: "HTML", stars: 0, desc: "AngularJS reference project." },
-    { name: "me", lang: "SCSS", stars: 0, desc: "Personal microsite." },
-    { name: "story-book", lang: "HTML", stars: 0, desc: "Storybook-style component playground." },
-    { name: "privacy-policies", lang: "HTML", stars: 0, desc: "Hosted privacy policy pages." },
-    { name: "Android-Privacy-Policies", lang: "HTML", stars: 0, desc: "Privacy policies for Android apps." },
-    { name: "twitter", lang: "PHP", stars: 0, desc: "Twitter API experiment." },
-    { name: "googleOAuth2", lang: "PHP", stars: 0, desc: "Google OAuth2 integration sample." },
-    { name: "WP-Clean-UP-and-Base-Function", lang: "PHP", stars: 0, desc: "WordPress cleanup & base functions." },
-    { name: "HelloiOS", lang: "Swift", stars: 0, desc: "Simple login screen for iOS." },
-    { name: "git-training", lang: "HTML", stars: 0, desc: "Git training material." }
-  ]
 };

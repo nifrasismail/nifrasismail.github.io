@@ -60,40 +60,6 @@
     });
   });
 
-  /* ---------- RENDER: GitHub archive (filterable) ---------- */
-  const repos = D.repos.slice().sort((a, b) => (b.featured - a.featured) || (b.stars - a.stars));
-  const langs = ["All", ...new Set(repos.map(r => r.lang))];
-  const ghBase = "https://github.com/nifrasismail/";
-
-  $("#archiveFilters").innerHTML = langs.map((l, i) =>
-    `<button class="filter-btn${i === 0 ? " active" : ""}" data-lang="${l}">${l}</button>`).join("");
-
-  function repoCard(r) {
-    return `<a class="repo-card${r.featured ? " featured" : ""}" href="${ghBase}${r.name}" target="_blank" rel="noopener" data-lang="${r.lang}" data-reveal>
-      <div class="repo-card__top">
-        <span class="repo-card__name">${r.name}</span>
-        ${r.stars ? `<span class="repo-card__star">★ ${r.stars}</span>` : ""}
-      </div>
-      <p class="repo-card__desc">${r.desc || "Public repository."}</p>
-      <span class="repo-card__lang">${r.lang}</span>
-    </a>`;
-  }
-  const grid = $("#archiveGrid");
-  grid.innerHTML = repos.map(repoCard).join("");
-
-  $$(".filter-btn").forEach(btn => {
-    btn.addEventListener("click", () => {
-      $$(".filter-btn").forEach(b => b.classList.remove("active"));
-      btn.classList.add("active");
-      const lang = btn.dataset.lang;
-      $$(".repo-card", grid).forEach(c => {
-        const show = lang === "All" || c.dataset.lang === lang;
-        c.style.display = show ? "" : "none";
-      });
-      if (hasGSAP) ScrollTrigger.refresh();
-    });
-  });
-
   /* ---------- RENDER: skills ---------- */
   $("#skillsGrid").innerHTML = D.skills.map(s => `
     <div class="skill-block" data-reveal>
