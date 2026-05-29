@@ -1,1 +1,169 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="shortcut icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><link rel="manifest" href="/manifest.json"/><title>Nifras Ismail | The Person who Play with Technologies</title><link href="/static/css/2.e34d0f74.chunk.css" rel="stylesheet"><link href="/static/css/main.0689ab3a.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script src="assets/js/main.js"></script><script>!function(l){function e(e){for(var r,t,n=e[0],o=e[1],u=e[2],f=0,i=[];f<n.length;f++)t=n[f],p[t]&&i.push(p[t][0]),p[t]=0;for(r in o)Object.prototype.hasOwnProperty.call(o,r)&&(l[r]=o[r]);for(s&&s(e);i.length;)i.shift()();return c.push.apply(c,u||[]),a()}function a(){for(var e,r=0;r<c.length;r++){for(var t=c[r],n=!0,o=1;o<t.length;o++){var u=t[o];0!==p[u]&&(n=!1)}n&&(c.splice(r--,1),e=f(f.s=t[0]))}return e}var t={},p={1:0},c=[];function f(e){if(t[e])return t[e].exports;var r=t[e]={i:e,l:!1,exports:{}};return l[e].call(r.exports,r,r.exports,f),r.l=!0,r.exports}f.m=l,f.c=t,f.d=function(e,r,t){f.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},f.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},f.t=function(r,e){if(1&e&&(r=f(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var t=Object.create(null);if(f.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var n in r)f.d(t,n,function(e){return r[e]}.bind(null,n));return t},f.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return f.d(r,"a",r),r},f.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},f.p="/";var r=window.webpackJsonp=window.webpackJsonp||[],n=r.push.bind(r);r.push=e,r=r.slice();for(var o=0;o<r.length;o++)e(r[o]);var s=n;a()}([])</script><script src="/static/js/2.7496066f.chunk.js"></script><script src="/static/js/main.cd754ed4.chunk.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nifras Ismail · AI Architect</title>
+  <meta name="description" content="Nifras Ismail — AI Architect. 10 years designing scalable, AI-powered distributed systems. The history of the things I've built, drawn as blueprints." />
+  <meta name="author" content="Mohamed Ismail Mohamed Nifras" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Nifras Ismail · AI Architect" />
+  <meta property="og:description" content="The history of my buildings — a decade of agentic AI systems, scaled platforms, and the engineering behind them." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nifrasismail.github.io" />
+
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- progress rail -->
+  <div class="scroll-progress"><span id="progressBar"></span></div>
+
+  <!-- preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__inner">
+      <svg class="preloader__compass" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="46" />
+        <line x1="50" y1="4" x2="50" y2="96" />
+        <line x1="4" y1="50" x2="96" y2="50" />
+        <polygon points="50,18 58,50 50,82 42,50" class="needle" />
+      </svg>
+      <p class="preloader__text">DRAFTING<span class="dots">...</span></p>
+    </div>
+  </div>
+
+  <!-- blueprint grid background -->
+  <div class="grid-bg" aria-hidden="true"></div>
+  <canvas id="particles" aria-hidden="true"></canvas>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <a href="#hero" class="nav__brand">NI<span>.</span></a>
+    <nav class="nav__links">
+      <a href="#timeline">History</a>
+      <a href="#projects">AI Systems</a>
+      <a href="#archive">Archive</a>
+      <a href="#skills">Toolkit</a>
+      <a href="#contact" class="nav__cta">Contact</a>
+    </nav>
+    <button class="nav__burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero__plan">
+        <span class="hero__tag" data-reveal>// EST. 2016 — STILL BUILDING</span>
+        <h1 class="hero__title">
+          <span class="line" data-split>AI</span>
+          <span class="line outline" data-split>ARCHITECT</span>
+        </h1>
+        <p class="hero__name" data-reveal>Nifras Ismail</p>
+        <p class="hero__lead" data-reveal>
+          I design the buildings that <em>intelligence</em> lives in —
+          a decade of scalable, agentic systems, drawn here as blueprints.
+        </p>
+        <div class="hero__actions" data-reveal>
+          <a href="#timeline" class="btn btn--primary">Walk the history</a>
+          <a href="#contact" class="btn btn--ghost">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero__scroll" aria-hidden="true"><span>SCROLL</span><i></i></div>
+    </section>
+
+    <!-- STATS BAND -->
+    <section class="stats" id="stats">
+      <div class="stats__grid" id="statsGrid"></div>
+    </section>
+
+    <!-- ABOUT / DRAFTING NOTE -->
+    <section class="about" id="about">
+      <div class="about__label" data-reveal>THE ARCHITECT</div>
+      <h2 class="about__text" data-words></h2>
+    </section>
+
+    <!-- TIMELINE: HISTORY OF MY BUILDINGS -->
+    <section class="timeline" id="timeline">
+      <div class="section-head" data-reveal>
+        <span class="section-head__kicker">01 — THE HISTORY</span>
+        <h2 class="section-head__title">The history of my buildings</h2>
+        <p class="section-head__sub">Every structure I've raised, in the order I raised it. Scroll to draw the line.</p>
+      </div>
+      <div class="timeline__track" id="timelineTrack">
+        <div class="timeline__line"><span id="timelineFill"></span></div>
+      </div>
+    </section>
+
+    <!-- AI PROJECTS -->
+    <section class="projects" id="projects">
+      <div class="section-head" data-reveal>
+        <span class="section-head__kicker">02 — FLAGSHIP SYSTEMS</span>
+        <h2 class="section-head__title">Intelligent systems I've shipped</h2>
+        <p class="section-head__sub">Production agentic AI — from legal research to autonomous QA.</p>
+      </div>
+      <div class="projects__grid" id="projectsGrid"></div>
+    </section>
+
+    <!-- GITHUB ARCHIVE -->
+    <section class="archive" id="archive">
+      <div class="section-head" data-reveal>
+        <span class="section-head__kicker">03 — THE ARCHIVE</span>
+        <h2 class="section-head__title">Open-source archive</h2>
+        <p class="section-head__sub">Every public repository — a decade of experiments, patterns and shipped code.</p>
+      </div>
+      <div class="archive__filters" id="archiveFilters"></div>
+      <div class="archive__grid" id="archiveGrid"></div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+      <div class="section-head" data-reveal>
+        <span class="section-head__kicker">04 — THE TOOLKIT</span>
+        <h2 class="section-head__title">What I build with</h2>
+      </div>
+      <div class="skills__grid" id="skillsGrid"></div>
+    </section>
+
+    <!-- AWARDS + EDUCATION -->
+    <section class="accolades" id="accolades">
+      <div class="accolades__col">
+        <h3 class="accolades__h" data-reveal>Recognition</h3>
+        <ul class="accolades__list" id="awardsList"></ul>
+      </div>
+      <div class="accolades__col">
+        <h3 class="accolades__h" data-reveal>Education</h3>
+        <div class="accolades__edu" id="eduBox"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="contact__inner" data-reveal>
+        <span class="section-head__kicker">05 — NEXT BLUEPRINT</span>
+        <h2 class="contact__title">Let's draw the next one together.</h2>
+        <a href="mailto:nifrasismail@gmail.com" class="contact__email">nifrasismail@gmail.com</a>
+        <div class="contact__links">
+          <a href="https://linkedin.com/in/nifrasismail" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/nifrasismail" target="_blank" rel="noopener">GitHub</a>
+          <a href="tel:+94778990300">+94 77 899 0300</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Mohamed Ismail Mohamed Nifras</span>
+    <span>Designed &amp; built as a blueprint — Sri Lanka · UAE</span>
+  </footer>
+
+  <!-- libs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
